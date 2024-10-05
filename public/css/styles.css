@@ -1,0 +1,147 @@
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f0f0f0; */
+  background-color: #855e55;
+  background-image: url("https://www.transparenttextures.com/patterns/old-husks.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.login,
+.register {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.start-sharing {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.start-sharing:hover {
+  background-color: #444;
+}
+
+a:hover {
+  color: #855e55;
+  text-decoration: none;
+}
+
+.centered {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.centered form {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+input {
+  outline: none;
+}
+
+.centered input {
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.centered form button {
+  width: 35%;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  margin-left: 70px;
+}
+
+.reveal-secret {
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reveal-secret .container {
+  padding: 20px;
+}
+
+.reveal-secret i {
+  color: #333;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+.submit-button:hover {
+  background-color: #444;
+}
+
+.danger {
+  color: rgb(201, 52, 52);
+  text-align: center;
+}

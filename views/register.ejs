@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/login" class="login">Login</a></li>
+        <li><a href="/register" class="register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="centered">
+    <h1 class="secret-text">Register</h1>
+    <form action="/register" method="post">
+      <input name="username" type="email" placeholder="Email" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <button type="submit" class="start-sharing">Register</button>
+
+      <% if (error==="email_in_use" ) { %>
+        <p class="danger">This email is already in use.</p>
+        <% }else if(error!="" ){ %>
+          <p class="danger">There is some problem please try again later.</p>
+          <% } %>
+
+    </form>
+  </div>
+
+  <%- include('partials/footer') %>
